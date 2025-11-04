@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador e Carrossel de Amor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Nosso Contador de Tempo <span class="heart">❤️</span></h1>
+    </header>
+
+    <main>
+        <section class="contador-container">
+            
+            <div id="contador">
+                <p>Calculando...</p>
+            </div>
+        </section>
+
+        <section class="carrossel-container">
+            <h2>Nossas Fotos <span class="heart">❤️</span></h2>
+            <div class="carrossel">
+                <div class="slides" id="slides-container">
+                    <img src="teste1.jpg" alt="Foto 1" class="slide">
+                    <img src="teste2.jpg" alt="Foto 2" class="slide">
+                    <img src="teste3.jpg" alt="Foto 2" class="slide">
+                    <img src="teste4.jpg" alt="Foto 2" class="slide">
+                    </div>
+                <button class="prev" onclick="mudarSlide(-1)">&#10094;</button>
+                <button class="next" onclick="mudarSlide(1)">&#10095;</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
